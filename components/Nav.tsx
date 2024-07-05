@@ -28,7 +28,7 @@ const links = [
 
 const Nav = () => {
   const pathname = usePathname();
-  console.log(pathname);
+  // console.log(pathname);
 
   return (
     <nav className="flex gap-8">
@@ -39,7 +39,7 @@ const Nav = () => {
             href={link.path}
             className={`${
               link.path === pathname && 'text-accent border-b-2 border-accent'
-            }`}
+            } capitalize font-medium hover:text-accent transition-all`}
           >
             {link.name}
           </Link>
@@ -48,5 +48,5 @@ const Nav = () => {
     </nav>
   );
 };
-/* TODO: 21:15からYouTune再生 */
+
 export default Nav;
