@@ -46,5 +46,5 @@ const Stairs = () => {
     </>
   );
 };
-/* TODO: 36:32からYouTune再生 */
+
 export default Stairs;
