@@ -65,5 +65,5 @@ const MobileNav = () => {
     </Sheet>
   );
 };
-/* TODO: 51:05からYouTune再生 */
+
 export default MobileNav;
