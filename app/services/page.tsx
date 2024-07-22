@@ -81,5 +81,5 @@ const Services = () => {
     </section>
   );
 };
-/* TODO: 01:32:53 */
+
 export default Services;
