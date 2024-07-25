@@ -2,16 +2,16 @@ import Link from 'next/link';
 import {
   FaGithub,
   FaInstagram,
-  FaSquareThreads,
   FaSpotify,
+  FaSquareThreads,
   FaXTwitter,
   FaYoutube,
 } from 'react-icons/fa6';
 
 const socials = [
-  { icon: <FaGithub />, path: 'https://github.com/digi-angler' },
+  { icon: <FaGithub />, path: 'https://github.com/digiangler' },
   { icon: <FaXTwitter />, path: 'https://x.com/digiangler' },
-  { icon: <FaInstagram />, path: 'https://www.instagram.com/digiangler' },
+  { icon: <FaInstagram />, path: 'https://www.instagram.com/digi_angler' },
   { icon: <FaSquareThreads />, path: 'https://www.threads.net/@digi_angler' },
   {
     icon: <FaYoutube />,
