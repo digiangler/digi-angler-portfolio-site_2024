@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Photo from '@/components/Photo';
 import Social from '@/components/Social';
 import Stats from '@/components/Stats';
@@ -46,6 +47,7 @@ const Home = () => {
         </div>
       </div>
       <Stats />
+      <Footer />
     </section>
   );
 };

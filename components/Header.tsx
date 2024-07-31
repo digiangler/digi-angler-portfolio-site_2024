@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import MobileNav from './MobileNav';
 import Nav from './Nav';
 import { Button } from './ui/button';
-import MobileNav from './MobileNav';
 
 const Header = () => {
   return (
@@ -10,13 +10,13 @@ const Header = () => {
         {/* logo */}
         <Link href={'/'}>
           <h1 className="text-4xl font-semibold">
-            Digi-Angler<span className="text-accent">.</span>
+            D.A<span className="text-accent">.</span>
           </h1>
         </Link>
         {/* desktop nav & hire me button */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href={'/'}>
+          <Link href={'https://github.com/digiangler/curriculum_vitae'}>
             <Button>Hire me</Button>
           </Link>
         </div>

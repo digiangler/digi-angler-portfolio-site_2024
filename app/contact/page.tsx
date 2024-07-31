@@ -113,5 +113,5 @@ const Contact = () => {
     </motion.section>
   );
 };
-/* TODO: 02:40:05 */
+/* TODO: 03:02:18 */
 export default Contact;
