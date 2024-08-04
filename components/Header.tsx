@@ -17,7 +17,7 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link href={'https://github.com/digiangler/curriculum_vitae'}>
-            <Button>Hire me</Button>
+            <Button>仕事依頼</Button>
           </Link>
         </div>
 
