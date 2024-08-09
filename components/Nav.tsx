@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+// TODO: ナビゲーション名の修正（英→日）
 const links = [
   {
     name: 'Home',

@@ -14,7 +14,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 
 import { motion } from 'framer-motion';
 
@@ -113,5 +113,5 @@ const Contact = () => {
     </motion.section>
   );
 };
-/* TODO: 03:02:18 */
+
 export default Contact;

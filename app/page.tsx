@@ -9,24 +9,26 @@ const Home = () => {
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-          {/* text */}
+          {/* 自己紹介 ヘッドコピー */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Full-Stack Developer</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br />{' '}
               <span className="text-accent">Digi-Angler</span>
             </h1>
+            {/* TODO: ヘッドコピーを修正 */}
             <p className="max-w-[500px] mb-9 text-white">
               私はエレガントなデジタル体験を作り出すことに優れており、さまざまなプログラミング言語とテクノロジーに精通しています。
             </p>
-            {/* btn and socials */}
+            {/* ダウンロードボタンとソーシャルリンク */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download CV</span>
+                {/* TODO: ダウンロードボタンのテキストを修正 */}
+                <span>ダウンロード</span>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
@@ -39,7 +41,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* photo */}
+          {/* プロフィール写真 */}
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
             <Photo />
           </div>
