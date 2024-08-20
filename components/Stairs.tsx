@@ -12,7 +12,7 @@ const stairAnimation = {
   },
 };
 
-// calculate the reverse index fot staggered delay
+// 時差遅延の逆インデックスを計算
 const reverseIndex = (index: number) => {
   const totalSteps = 6;
   return totalSteps - index - 1;
@@ -22,9 +22,9 @@ const Stairs = () => {
   return (
     <>
       {/*
-      render 6 motion divs, each representing a step of the stairs.
-      Each div will have the same animation defined by the stairsAnimation object.
-      The delay for each div is calculated dynamically based on it's reversed index, creating a staggered effect with decreasing delay for each subsequent step.
+      6つのmotion.divをレンダリングし、それぞれが階段の1ステップを表します。
+      各divには、stairsAnimationオブジェクトで定義された同じアニメーションが適用されます。
+      各divの遅延は、逆順のインデックスに基づいて動的に計算され、次のステップに進むごとに遅延が減少する階段状のエフェクトが作成されます。
     */}
       {[...Array(6)].map((_, index) => {
         return (
@@ -39,7 +39,8 @@ const Stairs = () => {
               ease: 'easeInOut',
               delay: reverseIndex(index) * 0.1,
             }}
-            className="h-full w-full bg-white relative"
+            // TODO: ステップのスタイルを修正
+            className="h-full w-full bg-accent relative"
           />
         );
       })}

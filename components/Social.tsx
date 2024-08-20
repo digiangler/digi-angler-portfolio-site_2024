@@ -7,7 +7,7 @@ import {
   FaXTwitter,
   FaYoutube,
 } from 'react-icons/fa6';
-
+// TODO: ソーシャルリンク先を追加
 const socials = [
   { icon: <FaGithub />, path: 'https://github.com/digiangler' },
   { icon: <FaXTwitter />, path: 'https://x.com/digiangler' },
