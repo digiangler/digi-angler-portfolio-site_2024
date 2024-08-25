@@ -3,7 +3,7 @@
 import { BsArrowDownRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-// TODO: サービス項目の修正
+// TODO: サービス項目の修正および追加
 const services = [
   {
     number: '01',

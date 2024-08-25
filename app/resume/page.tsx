@@ -34,7 +34,7 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { motion } from 'framer-motion';
 import { Item } from '@radix-ui/react-select';
-
+// TODO: 自己紹介項目の修正および追加
 // about data
 const about = {
   title: '自己紹介',
@@ -75,7 +75,7 @@ const about = {
     },
   ],
 };
-
+// TODO: 職務経歴の修正および追加
 // experience data
 const experience = {
   icon: '/assets/resume/badge.svg',
@@ -124,7 +124,7 @@ const experience = {
     },
   ],
 };
-
+// TODO: 学歴などの修正および追加
 // education data
 const education = {
   icon: '/assets/resume/cap.svg',
@@ -151,7 +151,7 @@ const education = {
     },
   ],
 };
-
+// TODO: スキル項目の修正および追加
 // skills data
 const skills = {
   title: 'スキル',

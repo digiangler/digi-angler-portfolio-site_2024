@@ -18,7 +18,7 @@ import {
 import WorkSliderBtns from '@/components/WorkSliderBtns';
 import Image from 'next/image';
 import Link from 'next/link';
-
+// TODO: 実績項目の修正および追加
 const projects = [
   {
     number: '01',
