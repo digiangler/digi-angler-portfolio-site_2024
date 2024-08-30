@@ -9,18 +9,18 @@ const Home = () => {
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-          {/* 自己紹介 ヘッドコピー */}
+          {/* NOTE: 自己紹介 ヘッドコピー */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Full-Stack Developer</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br />{' '}
               <span className="text-accent">Digi-Angler</span>
             </h1>
-            {/* TODO: ヘッドコピーを修正 */}
+            {/* REVIEW: ヘッドコピーを修正 */}
             <p className="max-w-[500px] mb-9 text-white">
-              私はエレガントなデジタル体験を作り出すことに優れており、さまざまなプログラミング言語とテクノロジーに精通しています。
+              フルスタック開発のエキスパートとして、洗練されたデジタル体験をトータルでサポートします。
             </p>
-            {/* ダウンロードボタンとソーシャルリンク */}
+            {/* NOTE: ダウンロードボタンとソーシャルリンク */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
                 variant="outline"
