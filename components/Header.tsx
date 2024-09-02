@@ -7,13 +7,13 @@ const Header = () => {
   return (
     <header className="py-8 xl:py-12 text-white">
       <div className="container mx-auto flex justify-between items-center">
-        {/* ロゴ */}
+        {/* NOTE: ロゴ */}
         <Link href={'/'}>
           <h1 className="text-4xl font-semibold">
             D.A<span className="text-accent">.</span>
           </h1>
         </Link>
-        {/* デスクトップ・ナビゲーションと雇用ボタン */}
+        {/* NOTE: デスクトップ・ナビゲーションと雇用ボタン */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           {/* TODO: ボタンのテキストを修正 */}
@@ -22,7 +22,7 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* モバイル・ナビゲーション（ハンバーガーメニュー） */}
+        {/* NOTE: モバイル・ナビゲーション（ハンバーガーメニュー） */}
         <div className="xl:hidden">
           <MobileNav />
         </div>
