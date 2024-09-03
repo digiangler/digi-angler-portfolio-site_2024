@@ -60,9 +60,9 @@ const Work = () => {
   const [project, setProject] = useState(projects[0]);
 
   const handleSlideChange = (swiper: any) => {
-    // get current slide index
+    // NOTE: get current slide index
     const currentIndex = swiper.activeIndex;
-    // update project state based on current slide index
+    // NOTE: update project state based on current slide index
     setProject(projects[currentIndex]);
   };
 
@@ -79,33 +79,33 @@ const Work = () => {
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
-              {/* outline number */}
+              {/* NOTE: outline number */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.number}
               </div>
-              {/* project category */}
+              {/* NOTE: project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
-              {/* project description */}
+              {/* NOTE: project description */}
               <p className="text-white/60">{project.description}</p>
-              {/* stack */}
+              {/* NOTE: stack */}
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
                       {item.name}
-                      {/* remove the last comma if it's the last item */}
+                      {/* NOTE: remove the last comma if it's the last item */}
                       {index !== project.stack.length - 1 && <span>, </span>}
                     </li>
                   );
                 })}
               </ul>
-              {/* border */}
+              {/* NOTE: border */}
               <div className="border border-white/20"></div>
-              {/* buttons */}
+              {/* NOTE: buttons */}
               <div className="flex items-center gap-4">
-                {/* live project button */}
+                {/* NOTE: live project button */}
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -118,7 +118,7 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                {/* github project button */}
+                {/* NOTE: GitHub project button */}
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -145,9 +145,9 @@ const Work = () => {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      {/* overlay */}
+                      {/* NOTE: overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                      {/* image */}
+                      {/* NOTE: image */}
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
@@ -160,7 +160,7 @@ const Work = () => {
                   </SwiperSlide>
                 );
               })}
-              {/* slider buttons */}
+              {/* NOTE: slider buttons */}
               <WorkSliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 buttonStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"

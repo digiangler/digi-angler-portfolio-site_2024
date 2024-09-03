@@ -13,7 +13,7 @@ const Photo = () => {
           transition: { delay: 2, duration: 0.4, ease: 'easeIn' },
         }}
       >
-        {/* プロフィール画像 */}
+        {/* NOTE: プロフィール画像 */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
@@ -32,7 +32,7 @@ const Photo = () => {
           />
         </motion.div>
 
-        {/* 円形 */}
+        {/* NOTE: 円形 */}
         <motion.svg
           className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
           fill="transparent"

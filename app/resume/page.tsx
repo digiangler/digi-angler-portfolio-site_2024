@@ -35,7 +35,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { motion } from 'framer-motion';
 import { Item } from '@radix-ui/react-select';
 // TODO: 自己紹介項目の修正および追加
-// about data
+// NOTE: about data
 const about = {
   title: '自己紹介',
   description:
@@ -76,7 +76,7 @@ const about = {
   ],
 };
 // TODO: 職務経歴の修正および追加
-// experience data
+// NOTE: experience data
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: '職務経歴',
@@ -125,7 +125,7 @@ const experience = {
   ],
 };
 // TODO: 学歴などの修正および追加
-// education data
+// NOTE: education data
 const education = {
   icon: '/assets/resume/cap.svg',
   title: '学歴/資格/教育',
@@ -152,7 +152,7 @@ const education = {
   ],
 };
 // TODO: スキル項目の修正および追加
-// skills data
+// NOTE: skills data
 const skills = {
   title: 'スキル',
   description: '私のスキルをまとめたものは以下になります。',
@@ -238,9 +238,9 @@ const Resume = () => {
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
 
-          {/* content */}
+          {/* NOTE: content */}
           <div className="min-h-[70vh] w-full">
-            {/* experience */}
+            {/* NOTE: experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
@@ -260,7 +260,7 @@ const Resume = () => {
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
-                            {/* dot */}
+                            {/* NOTE: dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60">{item.company}</p>
                           </div>
@@ -272,7 +272,7 @@ const Resume = () => {
               </div>
             </TabsContent>
 
-            {/* education */}
+            {/* NOTE: education */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
@@ -292,7 +292,7 @@ const Resume = () => {
                             {item.degree}
                           </h3>
                           <div className="flex items-center gap-3">
-                            {/* dot */}
+                            {/* NOTE: dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60">{item.institution}</p>
                           </div>
@@ -304,7 +304,7 @@ const Resume = () => {
               </div>
             </TabsContent>
 
-            {/* skills */}
+            {/* NOTE: skills */}
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -338,7 +338,7 @@ const Resume = () => {
               </div>
             </TabsContent>
 
-            {/* about */}
+            {/* NOTE: about */}
             <TabsContent
               value="about"
               className="w-full text-center xl:text-left"

@@ -41,7 +41,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* プロフィール写真 */}
+          {/* NOTE: プロフィール写真 */}
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
             <Photo />
           </div>
