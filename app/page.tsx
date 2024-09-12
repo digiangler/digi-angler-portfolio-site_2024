@@ -27,8 +27,8 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                {/* TODO: ダウンロードボタンのテキストを修正 */}
-                <span>ダウンロード</span>
+                {/* REVIEW: 職務経歴書（ダウンロード）ボタンのテキストを修正 */}
+                <span>職務経歴書</span>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
