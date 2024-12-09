@@ -71,19 +71,19 @@ const Contact = () => {
                 {/* TODO: フォーム情報を追加 */}
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="bst">Mobile Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
-                    <SelectItem value="qst">QA & Testing</SelectItem>
+                    <SelectLabel>サービスを選択してください</SelectLabel>
+                    <SelectItem value="est">ウェブ系の開発</SelectItem>
+                    <SelectItem value="bst">モバイル系の開発</SelectItem>
+                    <SelectItem value="cst">UI/UX デザイン</SelectItem>
+                    <SelectItem value="mst">ロゴデザイン</SelectItem>
+                    <SelectItem value="qst">QA とテスト</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
               {/* NOTE: textarea */}
               <Textarea
                 className="h-[200px]"
-                placeholder="Type your message here."
+                placeholder="ここにメッセージを入力してください。"
               />
               {/* NOTE: button */}
               <Button size="md" className="max-w-40">
